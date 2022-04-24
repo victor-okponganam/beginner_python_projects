@@ -26,10 +26,12 @@ while True:
     else:
         print("Please type a number next time.")
         continue
-
+    
     if user_guess == random_number:
         print("You got it!")
         break
+    elif user_guess > random_number:
+        print("Your were above the number!" )
     else:
-        print("You got wrong!" )
+        print("Your guess is below")
 print("You got it in", guess, "guess")
